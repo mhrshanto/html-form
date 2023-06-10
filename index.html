@@ -7,16 +7,8 @@
 </head>
 <body>
     <form name="first-form" action="">
-        <fieldset>
+        <fieldset style="width:500px">
             <legend>Personal Information</legend>
-            <div class="salutation">
-                <label for="salutation">Salutation</label>
-                <select name="salutation" id="salutation">
-                    <option value="Welcome">Welcome</option>
-                    <option value="Hello" selected>Hello</option>
-                    <option value="Hi">Hi</option>
-                </select>
-            </div><br>
             <div class="form-feild">
                 <label for="fName">First Name:</label>
                 <input type="text" id="fName" name="fName" required>
@@ -37,6 +29,14 @@
             <div class="form-feild">
                 <label for="date">Date Of Birth:</label>
                 <input type="date" id="date" name="date" required>
+            </div><br>
+            <div class="country">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="Welcome">USA</option>
+                    <option value="Hello">India</option>
+                    <option value="Hi" selected>Bangladesh</option>
+                </select>
             </div><br>
             <div class="form-feild">
                 <label for="address">Address:</label><br>
