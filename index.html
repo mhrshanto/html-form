@@ -10,7 +10,7 @@
 
 <body>
     <main>
-        <form name="sign-up-form" action="./success.html">
+        <form id="itsform" name="sign-up-form" onsubmit="formSucess()">
             <fieldset>
                 <legend>SIGN UP FORM</legend>
                 <div class="main-form">
@@ -19,7 +19,7 @@
                             <label for="first-name">First Name:</label>
                         </div>
                         <div class="input">
-                            <input type="text" id="first-name" placeholder="First Name" required>
+                            <input type="text" id="first-name" placeholder="First Name">
                         </div>
                     </div>
                     <div class="form-feild">
@@ -35,7 +35,7 @@
                             <label for="email">Email:</label>
                         </div>
                         <div class="input">
-                            <input type="email" id="email" placeholder="UserMail" required>
+                            <input type="email" id="email" placeholder="UserMail">
                         </div>
                     </div>
                     <div class="form-feild">
@@ -43,7 +43,7 @@
                             <label for="password">Password:</label>
                         </div>
                         <div class="input">
-                            <input type="password" id="password" placeholder="UserPass" required>
+                            <input type="password" id="password" placeholder="UserPass">
                         </div>
                     </div>
                     <div class="form-feild">
@@ -64,7 +64,7 @@
                             <label for="country">Country:</label>
                         </div>
                         <div class="input">
-                            <input type="text" id="country" required>
+                            <input type="text" id="country">
                         </div>
                     </div>
                     <div class="form-feild">
@@ -83,7 +83,7 @@
                             <label for="dob">Date Of Birth:</label>
                         </div>
                         <div class="input">
-                            <input type="date" id="dob" required>
+                            <input type="date" id="dob">
                         </div>
                     </div>
                     <div class="form-feild">
@@ -107,7 +107,7 @@
                             <label for="photo">Your Photo:</label>
                         </div>
                         <div class="input">
-                            <input type="file" id="photo" required>
+                            <input type="file" id="photo">
                         </div>
                     </div>
                     <div class="form-feild">
@@ -137,7 +137,11 @@
                 </div>
             </fieldset>
         </form>
+        <section class="success-page">
+            <p id="nameValue"></p>
+        </section>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
