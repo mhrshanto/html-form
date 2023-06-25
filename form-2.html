@@ -4,82 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form 2 Practice</title>
-    <style>
-        .form-feild {
-            margin: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <form name="sign-up-form" action="./success.html">
             <fieldset>
                 <legend>SIGN UP FORM</legend>
+            <div class="main-form">
             <div class="form-feild">
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" placeholder="First Name">
-            </div>
-            <div class="form-feild">
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" placeholder="Last Name">
-            </div>
-            <div class="form-feild">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="UserMail">
-            </div>
-            <div class="form-feild">
-                <label for="password">Email:</label>
-                <input type="password" id="password" placeholder="UserPass">
-            </div>
-            <div class="form-feild">
-                <label for="phone">Phone:</label>
-                <select name="number" id="phone-number">
-                    <option value="888">888</option>
-                    <option value="888">555</option>
-                    <option value="888">666</option>
-                    <option value="888">777</option>
-                </select>
-                <input type="tel" id="phone">
-            </div>
-            <div class="form-feild">
-                <label for="country">Country:</label>
-                <input type="text" id="country">
-            </div>
-            <div class="form-feild">
-                <label>Gender:</label>
-                <input name="gender" type="radio" id="male" value="male"><label for="male">Male</label>
-                <input name="gender" type="radio" id="female" value="female"><label for="female">Female</label>
-            </div>
-            <div class="form-feild">
-                <label for="dob">Date Of Birth:</label>
-                <input type="date" id="dob">
-            </div>
-            <div class="form-feild">
-                <label for="time">Time:</label>
-                <input type="time" id="time">
-            </div>
-            <div class="form-feild">
-                <label for="color">Color:</label>
-                <input type="color" id="color">
-            </div>
-            <div class="form-feild">
-                <label for="photo">Your Photo:</label>
-                <input type="file" id="photo">
-            </div>
-            <div class="form-feild">
-                <label>Favourite Vehicle:</label>
-                <div id="fv">
-                    <input name="fv" type="checkbox" id="bike" value="Bike"><label for="bike">Bike</label>
-                    <input name="fv" type="checkbox" id="bicycle" value="Bicycle"><label for="bicycle">Bicycle</label>
+                <div class="label">
+                    <label for="first-name">First Name:</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="first-name" placeholder="First Name" required>
                 </div>
             </div>
             <div class="form-feild">
-                <label for="text-area">Comment Here:</label>
-                <textarea name="comment" id="text-area" cols="30" rows="10"></textarea>
+                <div class="label">
+                    <label for="last-name">Last Name:</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="last-name" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="input">
+                    <input type="email" id="email" placeholder="UserMail" required>
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="input">
+                    <input type="password" id="password" placeholder="UserPass" required>
+                </div>    
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="phone">Phone:</label>
+                </div>
+                <div class="input">
+                    <div class="phone-num">
+                        <select name="number" id="phone-number">
+                            <option value="+880">+880</option>
+                        </select>
+                        <input type="tel" id="phone">
+                    </div>
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="country">Country:</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="country" required>
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label>Gender:</label>
+                </div>
+                <div class="input">
+                    <input name="gender" type="radio" id="male" value="male" checked><label for="male">Male</label>
+                    <input name="gender" type="radio" id="female" value="female"><label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="input">
+                    <input type="date" id="dob" required>
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="time">Time:</label>
+                </div>
+                <div class="input">
+                    <input type="time" id="time">
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="color">Favourite Color:</label>
+                </div>
+                <div class="input">
+                    <input type="color" id="color">
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="photo">Your Photo:</label>
+                </div>
+                <div class="input">
+                    <input type="file" id="photo" required>
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label>Favourite Vehicle:</label>
+                </div>
+                <div class="input">
+                    <div id="fv">
+                        <input name="fv" type="checkbox" id="bike" value="Bike"><label for="bike">Bike</label>
+                        <input name="fv" type="checkbox" id="bicycle" value="Bicycle"><label for="bicycle">Bicycle</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-feild">
+                <div class="label">
+                    <label for="text-area">Comment Here:</label>
+                </div>
+                <div class="input">
+                    <textarea name="comment" id="text-area" cols="30" rows="10"></textarea>
+                </div>
             </div>
             <div class="button">
                 <input type="submit" value="submit">
                 <input type="reset" value="reset">
+            </div>
             </div>
             </fieldset>
         </form>
